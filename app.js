@@ -243,7 +243,6 @@ const SEASON_START = new Date('2024-10-22');
 const SEASON_END = new Date('2025-04-13');
 
 function showBattle() {
-  battleBtn.classList.remove('hidden');
   battleBtn.disabled = false;
   battleSection.classList.remove('hidden');
   battleResult.classList.add('hidden');
@@ -251,7 +250,6 @@ function showBattle() {
 }
 
 function hideBattle() {
-  battleBtn.classList.add('hidden');
   battleBtn.disabled = true;
   battleSection.classList.add('hidden');
 }
