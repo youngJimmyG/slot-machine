@@ -243,13 +243,16 @@ const SEASON_START = new Date('2024-10-22');
 const SEASON_END = new Date('2025-04-13');
 
 function showBattle() {
-  battleSection.classList.remove('hidden');
+  battleBtn.classList.remove('hidden');
   battleBtn.disabled = false;
+  battleSection.classList.remove('hidden');
   battleResult.classList.add('hidden');
   document.getElementById('winner-banner').classList.add('hidden');
 }
 
 function hideBattle() {
+  battleBtn.classList.add('hidden');
+  battleBtn.disabled = true;
   battleSection.classList.add('hidden');
 }
 
@@ -401,6 +404,9 @@ async function battle() {
     document.getElementById('score-total-b').textContent = totalB;
     await sleep(300);
   }
+
+  // Scroll to results
+  battleSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
 
   // Winner
   await sleep(500);
