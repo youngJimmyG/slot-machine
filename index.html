@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3v3 Slot Machine</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>3 <span class="vs">vs</span> 3</h1>
+      <p class="subtitle">Top 100 Scorers &bull; 2024-25 Season</p>
+    </header>
+
+    <div class="machine">
+      <div class="team team-a">
+        <div class="team-label">TEAM A</div>
+        <div class="slots">
+          <div class="slot" id="slot-0"><div class="reel"></div><div class="slot-overlay"></div></div>
+          <div class="slot" id="slot-1"><div class="reel"></div><div class="slot-overlay"></div></div>
+          <div class="slot" id="slot-2"><div class="reel"></div><div class="slot-overlay"></div></div>
+        </div>
+      </div>
+
+      <div class="vs-divider">VS</div>
+
+      <div class="team team-b">
+        <div class="team-label">TEAM B</div>
+        <div class="slots">
+          <div class="slot" id="slot-3"><div class="reel"></div><div class="slot-overlay"></div></div>
+          <div class="slot" id="slot-4"><div class="reel"></div><div class="slot-overlay"></div></div>
+          <div class="slot" id="slot-5"><div class="reel"></div><div class="slot-overlay"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button id="spin-btn" class="btn btn-spin">🎰 SPIN</button>
+      <button id="respin-btn" class="btn btn-respin" disabled>🔄 RESPIN UNLOCKED</button>
+    </div>
+
+    <p class="instructions" id="instructions">Hit SPIN to draft your 3v3 teams</p>
+  </div>
+
+  <script src="players.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
