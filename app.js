@@ -14,6 +14,9 @@ const STAGGER_MS = 300;           // extra ms per slot
 const spinBtn = document.getElementById('spin-btn');
 const respinBtn = document.getElementById('respin-btn');
 const instructions = document.getElementById('instructions');
+const battleSection = document.getElementById('battle-section');
+const battleBtn = document.getElementById('battle-btn');
+const battleResult = document.getElementById('battle-result');
 
 // ─── Init reels with random faces ───
 function initReels() {
@@ -122,6 +125,11 @@ async function spin() {
   respinBtn.disabled = false;
   instructions.textContent = 'Click players to respin, or SPIN for all new teams';
 
+  // Also show battle — user can skip respin and go straight to battle
+  showBattle();
+  battleBtn.textContent = '⚔️ BATTLE';
+  battleResult.classList.add('hidden');
+
   // Enable respin selection
   enableRespinSelection();
 }
@@ -223,11 +231,202 @@ async function respin() {
     el.classList.add('locked');
     el.onclick = null;
   }
+
+  // Show battle button
+  showBattle();
+}
+
+// ─── Battle System ───
+
+// Season date range: Oct 22 2024 – Apr 13 2025
+const SEASON_START = new Date('2024-10-22');
+const SEASON_END = new Date('2025-04-13');
+
+function showBattle() {
+  battleSection.classList.remove('hidden');
+  battleBtn.disabled = false;
+  battleResult.classList.add('hidden');
+  document.getElementById('winner-banner').classList.add('hidden');
+}
+
+function hideBattle() {
+  battleSection.classList.add('hidden');
+}
+
+function randomSeasonDate() {
+  const start = SEASON_START.getTime();
+  const end = SEASON_END.getTime();
+  const random = start + Math.random() * (end - start);
+  return new Date(random);
+}
+
+function formatDate(d) {
+  const months = ['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'];
+  return `${months[d.getMonth()]} ${d.getDate()}, ${d.getFullYear()}`;
+}
+
+function findClosestGame(playerId, targetDate) {
+  const games = GAME_LOGS[playerId];
+  if (!games || games.length === 0) return null;
+
+  const targetMs = targetDate.getTime();
+  let closest = null;
+  let closestDiff = Infinity;
+
+  for (const game of games) {
+    const gameDate = new Date(game.date);
+    const diff = Math.abs(gameDate.getTime() - targetMs);
+    if (diff < closestDiff) {
+      closestDiff = diff;
+      closest = game;
+    }
+  }
+  return closest;
+}
+
+async function animateDateReveal(finalDate) {
+  const el = document.getElementById('date-reveal');
+  const months = ['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'];
+
+  // Spin through random dates
+  for (let i = 0; i < 20; i++) {
+    const d = randomSeasonDate();
+    el.innerHTML = `<span class="date-spinning">${formatDate(d)}</span>`;
+    await sleep(60 + i * 8);
+  }
+
+  // Land on final date
+  el.innerHTML = `<span class="date-final">📅 ${formatDate(finalDate)}</span>`;
+}
+
+function sleep(ms) {
+  return new Promise(r => setTimeout(r, ms));
+}
+
+async function animateScoreCard(card, pts) {
+  card.classList.add('revealed');
+  const ptsEl = card.querySelector('.score-card-pts');
+
+  // Count up
+  const duration = 600;
+  const steps = 15;
+  const stepTime = duration / steps;
+
+  for (let i = 1; i <= steps; i++) {
+    const val = Math.round((i / steps) * pts);
+    ptsEl.textContent = val;
+    ptsEl.classList.add('counting');
+    await sleep(stepTime);
+    ptsEl.classList.remove('counting');
+  }
+  ptsEl.textContent = pts;
+}
+
+function createScoreCard(player, game) {
+  const card = document.createElement('div');
+  card.className = 'score-card' + (game ? '' : ' no-game');
+
+  const gameDate = game ? new Date(game.date) : null;
+  const dateStr = gameDate ? formatDate(gameDate) : '';
+  const wlClass = game ? (game.wl === 'W' ? 'win' : 'loss') : '';
+
+  card.innerHTML = `
+    <img src="${player.headshot}" alt="${player.name}"
+         onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2250%22 height=%2238%22><rect fill=%22%231a1a2e%22 width=%2250%22 height=%2238%22/></svg>'">
+    <div class="score-card-info">
+      <div class="score-card-name">${player.name}</div>
+      <div class="score-card-matchup">
+        ${game ? `${dateStr} &bull; ${game.matchup}` : 'No game found'}
+        ${game ? `<span class="score-card-wl ${wlClass}">${game.wl}</span>` : ''}
+      </div>
+    </div>
+    <div class="score-card-pts">${game ? '0' : 'DNP'}</div>
+  `;
+  return card;
+}
+
+async function battle() {
+  battleBtn.disabled = true;
+  battleResult.classList.remove('hidden');
+  document.getElementById('winner-banner').classList.add('hidden');
+
+  // Clear previous
+  document.getElementById('score-cards-a').innerHTML = '';
+  document.getElementById('score-cards-b').innerHTML = '';
+  document.getElementById('score-total-a').textContent = '0';
+  document.getElementById('score-total-b').textContent = '0';
+
+  // Random date
+  const targetDate = randomSeasonDate();
+  await animateDateReveal(targetDate);
+  await sleep(500);
+
+  // Find closest games for each player
+  const teamAPlayers = currentPicks.slice(0, 3);
+  const teamBPlayers = currentPicks.slice(3, 6);
+
+  const teamAGames = teamAPlayers.map(p => findClosestGame(p.id, targetDate));
+  const teamBGames = teamBPlayers.map(p => findClosestGame(p.id, targetDate));
+
+  // Build score cards
+  const cardsA = document.getElementById('score-cards-a');
+  const cardsB = document.getElementById('score-cards-b');
+
+  const cardElsA = [];
+  const cardElsB = [];
+
+  for (let i = 0; i < 3; i++) {
+    const cardA = createScoreCard(teamAPlayers[i], teamAGames[i]);
+    cardsA.appendChild(cardA);
+    cardElsA.push({ el: cardA, pts: teamAGames[i]?.pts || 0 });
+
+    const cardB = createScoreCard(teamBPlayers[i], teamBGames[i]);
+    cardsB.appendChild(cardB);
+    cardElsB.push({ el: cardB, pts: teamBGames[i]?.pts || 0 });
+  }
+
+  // Animate reveals one by one, alternating teams
+  let totalA = 0, totalB = 0;
+
+  for (let i = 0; i < 3; i++) {
+    // Team A player
+    await animateScoreCard(cardElsA[i].el, cardElsA[i].pts);
+    totalA += cardElsA[i].pts;
+    document.getElementById('score-total-a').textContent = totalA;
+    await sleep(300);
+
+    // Team B player
+    await animateScoreCard(cardElsB[i].el, cardElsB[i].pts);
+    totalB += cardElsB[i].pts;
+    document.getElementById('score-total-b').textContent = totalB;
+    await sleep(300);
+  }
+
+  // Winner
+  await sleep(500);
+  const banner = document.getElementById('winner-banner');
+  banner.className = 'winner-banner';
+
+  if (totalA > totalB) {
+    banner.textContent = '🏆 TEAM A WINS';
+    banner.classList.add('team-a-wins');
+  } else if (totalB > totalA) {
+    banner.textContent = '🏆 TEAM B WINS';
+    banner.classList.add('team-b-wins');
+  } else {
+    banner.textContent = '🤝 TIE GAME';
+    banner.classList.add('tie');
+  }
+
+  // Re-enable for another battle with same teams
+  battleBtn.disabled = false;
+  battleBtn.textContent = '⚔️ BATTLE AGAIN';
 }
 
 // ─── Event listeners ───
-spinBtn.addEventListener('click', spin);
+spinBtn.addEventListener('click', () => { hideBattle(); spin(); });
 respinBtn.addEventListener('click', respin);
+battleBtn.addEventListener('click', battle);
 
 // ─── Init ───
 initReels();

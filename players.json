@@ -1,0 +1,902 @@
+[
+  {
+    "id": 1628983,
+    "rank": 1,
+    "name": "Shai Gilgeous-Alexander",
+    "team": "OKC",
+    "pts": 2484,
+    "ppg": "32.7",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/1628983.png"
+  },
+  {
+    "id": 1630162,
+    "rank": 2,
+    "name": "Anthony Edwards",
+    "team": "MIN",
+    "pts": 2177,
+    "ppg": "27.6",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/1630162.png"
+  },
+  {
+    "id": 203999,
+    "rank": 3,
+    "name": "Nikola Jokić",
+    "team": "DEN",
+    "pts": 2071,
+    "ppg": "29.6",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/203999.png"
+  },
+  {
+    "id": 203507,
+    "rank": 4,
+    "name": "Giannis Antetokounmpo",
+    "team": "MIL",
+    "pts": 2036,
+    "ppg": "30.4",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/203507.png"
+  },
+  {
+    "id": 1628369,
+    "rank": 5,
+    "name": "Jayson Tatum",
+    "team": "BOS",
+    "pts": 1932,
+    "ppg": "26.8",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/1628369.png"
+  },
+  {
+    "id": 1626164,
+    "rank": 6,
+    "name": "Devin Booker",
+    "team": "PHX",
+    "pts": 1923,
+    "ppg": "25.6",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/1626164.png"
+  },
+  {
+    "id": 1629027,
+    "rank": 7,
+    "name": "Trae Young",
+    "team": "ATL",
+    "pts": 1841,
+    "ppg": "24.2",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/1629027.png"
+  },
+  {
+    "id": 1629639,
+    "rank": 8,
+    "name": "Tyler Herro",
+    "team": "MIA",
+    "pts": 1840,
+    "ppg": "23.9",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/1629639.png"
+  },
+  {
+    "id": 1630595,
+    "rank": 9,
+    "name": "Cade Cunningham",
+    "team": "DET",
+    "pts": 1830,
+    "ppg": "26.1",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/1630595.png"
+  },
+  {
+    "id": 201935,
+    "rank": 10,
+    "name": "James Harden",
+    "team": "LAC",
+    "pts": 1802,
+    "ppg": "22.8",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/201935.png"
+  },
+  {
+    "id": 1626157,
+    "rank": 11,
+    "name": "Karl-Anthony Towns",
+    "team": "NYK",
+    "pts": 1759,
+    "ppg": "24.4",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/1626157.png"
+  },
+  {
+    "id": 203897,
+    "rank": 12,
+    "name": "Zach LaVine",
+    "team": "SAC",
+    "pts": 1724,
+    "ppg": "23.3",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/203897.png"
+  },
+  {
+    "id": 1630224,
+    "rank": 13,
+    "name": "Jalen Green",
+    "team": "HOU",
+    "pts": 1723,
+    "ppg": "21.0",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/1630224.png"
+  },
+  {
+    "id": 201939,
+    "rank": 14,
+    "name": "Stephen Curry",
+    "team": "GSW",
+    "pts": 1718,
+    "ppg": "24.5",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/201939.png"
+  },
+  {
+    "id": 201942,
+    "rank": 15,
+    "name": "DeMar DeRozan",
+    "team": "SAC",
+    "pts": 1710,
+    "ppg": "22.2",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/201942.png"
+  },
+  {
+    "id": 2544,
+    "rank": 15,
+    "name": "LeBron James",
+    "team": "LAL",
+    "pts": 1710,
+    "ppg": "24.4",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/2544.png"
+  },
+  {
+    "id": 1628378,
+    "rank": 17,
+    "name": "Donovan Mitchell",
+    "team": "CLE",
+    "pts": 1701,
+    "ppg": "24.0",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/1628378.png"
+  },
+  {
+    "id": 1628973,
+    "rank": 18,
+    "name": "Jalen Brunson",
+    "team": "NYK",
+    "pts": 1690,
+    "ppg": "26.0",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/1628973.png"
+  },
+  {
+    "id": 201142,
+    "rank": 19,
+    "name": "Kevin Durant",
+    "team": "PHX",
+    "pts": 1647,
+    "ppg": "26.6",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/201142.png"
+  },
+  {
+    "id": 1628991,
+    "rank": 20,
+    "name": "Jaren Jackson Jr.",
+    "team": "MEM",
+    "pts": 1641,
+    "ppg": "22.2",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/1628991.png"
+  },
+  {
+    "id": 1627783,
+    "rank": 21,
+    "name": "Pascal Siakam",
+    "team": "IND",
+    "pts": 1578,
+    "ppg": "20.2",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/1627783.png"
+  },
+  {
+    "id": 1629636,
+    "rank": 22,
+    "name": "Darius Garland",
+    "team": "CLE",
+    "pts": 1544,
+    "ppg": "20.6",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/1629636.png"
+  },
+  {
+    "id": 1629632,
+    "rank": 23,
+    "name": "Coby White",
+    "team": "CHI",
+    "pts": 1509,
+    "ppg": "20.4",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/1629632.png"
+  },
+  {
+    "id": 1631114,
+    "rank": 24,
+    "name": "Jalen Williams",
+    "team": "OKC",
+    "pts": 1490,
+    "ppg": "21.6",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/1631114.png"
+  },
+  {
+    "id": 1630559,
+    "rank": 25,
+    "name": "Austin Reaves",
+    "team": "LAL",
+    "pts": 1475,
+    "ppg": "20.2",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/1630559.png"
+  },
+  {
+    "id": 1628368,
+    "rank": 26,
+    "name": "De'Aaron Fox",
+    "team": "SAS",
+    "pts": 1459,
+    "ppg": "23.5",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/1628368.png"
+  },
+  {
+    "id": 1630578,
+    "rank": 27,
+    "name": "Alperen Sengun",
+    "team": "HOU",
+    "pts": 1451,
+    "ppg": "19.1",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/1630578.png"
+  },
+  {
+    "id": 1630532,
+    "rank": 28,
+    "name": "Franz Wagner",
+    "team": "ORL",
+    "pts": 1449,
+    "ppg": "24.1",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/1630532.png"
+  },
+  {
+    "id": 203081,
+    "rank": 29,
+    "name": "Damian Lillard",
+    "team": "MIL",
+    "pts": 1447,
+    "ppg": "24.9",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/203081.png"
+  },
+  {
+    "id": 1628969,
+    "rank": 30,
+    "name": "Mikal Bridges",
+    "team": "NYK",
+    "pts": 1444,
+    "ppg": "17.6",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/1628969.png"
+  },
+  {
+    "id": 1627750,
+    "rank": 31,
+    "name": "Jamal Murray",
+    "team": "DEN",
+    "pts": 1436,
+    "ppg": "21.4",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/1627750.png"
+  },
+  {
+    "id": 1628389,
+    "rank": 32,
+    "name": "Bam Adebayo",
+    "team": "MIA",
+    "pts": 1410,
+    "ppg": "18.1",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/1628389.png"
+  },
+  {
+    "id": 1629029,
+    "rank": 33,
+    "name": "Luka Dončić",
+    "team": "LAL",
+    "pts": 1408,
+    "ppg": "28.2",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/1629029.png"
+  },
+  {
+    "id": 1627759,
+    "rank": 34,
+    "name": "Jaylen Brown",
+    "team": "BOS",
+    "pts": 1398,
+    "ppg": "22.2",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/1627759.png"
+  },
+  {
+    "id": 1629008,
+    "rank": 34,
+    "name": "Michael Porter Jr.",
+    "team": "DEN",
+    "pts": 1398,
+    "ppg": "18.2",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/1629008.png"
+  },
+  {
+    "id": 1629673,
+    "rank": 36,
+    "name": "Jordan Poole",
+    "team": "WAS",
+    "pts": 1391,
+    "ppg": "20.5",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/1629673.png"
+  },
+  {
+    "id": 1630178,
+    "rank": 37,
+    "name": "Tyrese Maxey",
+    "team": "PHI",
+    "pts": 1369,
+    "ppg": "26.3",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/1630178.png"
+  },
+  {
+    "id": 1630169,
+    "rank": 38,
+    "name": "Tyrese Haliburton",
+    "team": "IND",
+    "pts": 1359,
+    "ppg": "18.6",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/1630169.png"
+  },
+  {
+    "id": 202696,
+    "rank": 39,
+    "name": "Nikola Vučević",
+    "team": "CHI",
+    "pts": 1349,
+    "ppg": "18.5",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/202696.png"
+  },
+  {
+    "id": 1629014,
+    "rank": 40,
+    "name": "Anfernee Simons",
+    "team": "POR",
+    "pts": 1348,
+    "ppg": "19.3",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/1629014.png"
+  },
+  {
+    "id": 1627826,
+    "rank": 41,
+    "name": "Ivica Zubac",
+    "team": "LAC",
+    "pts": 1340,
+    "ppg": "16.8",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/1627826.png"
+  },
+  {
+    "id": 1627734,
+    "rank": 42,
+    "name": "Domantas Sabonis",
+    "team": "SAC",
+    "pts": 1337,
+    "ppg": "19.1",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/1627734.png"
+  },
+  {
+    "id": 1627736,
+    "rank": 43,
+    "name": "Malik Beasley",
+    "team": "DET",
+    "pts": 1336,
+    "ppg": "16.3",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/1627736.png"
+  },
+  {
+    "id": 1631101,
+    "rank": 44,
+    "name": "Shaedon Sharpe",
+    "team": "POR",
+    "pts": 1335,
+    "ppg": "18.5",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/1631101.png"
+  },
+  {
+    "id": 1628384,
+    "rank": 45,
+    "name": "OG Anunoby",
+    "team": "NYK",
+    "pts": 1332,
+    "ppg": "18.0",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/1628384.png"
+  },
+  {
+    "id": 1630217,
+    "rank": 46,
+    "name": "Desmond Bane",
+    "team": "ORL",
+    "pts": 1327,
+    "ppg": "19.2",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/1630217.png"
+  },
+  {
+    "id": 1630596,
+    "rank": 47,
+    "name": "Evan Mobley",
+    "team": "CLE",
+    "pts": 1316,
+    "ppg": "18.5",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/1630596.png"
+  },
+  {
+    "id": 1626181,
+    "rank": 48,
+    "name": "Norman Powell",
+    "team": "LAC",
+    "pts": 1306,
+    "ppg": "21.8",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/1626181.png"
+  },
+  {
+    "id": 1628970,
+    "rank": 49,
+    "name": "Miles Bridges",
+    "team": "CHA",
+    "pts": 1300,
+    "ppg": "20.3",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/1628970.png"
+  },
+  {
+    "id": 203944,
+    "rank": 50,
+    "name": "Julius Randle",
+    "team": "MIN",
+    "pts": 1288,
+    "ppg": "18.7",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/203944.png"
+  },
+  {
+    "id": 203076,
+    "rank": 51,
+    "name": "Anthony Davis",
+    "team": "DAL",
+    "pts": 1261,
+    "ppg": "24.7",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/203076.png"
+  },
+  {
+    "id": 1630567,
+    "rank": 52,
+    "name": "Scottie Barnes",
+    "team": "TOR",
+    "pts": 1252,
+    "ppg": "19.3",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/1630567.png"
+  },
+  {
+    "id": 1628401,
+    "rank": 53,
+    "name": "Derrick White",
+    "team": "BOS",
+    "pts": 1248,
+    "ppg": "16.4",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/1628401.png"
+  },
+  {
+    "id": 202681,
+    "rank": 54,
+    "name": "Kyrie Irving",
+    "team": "DAL",
+    "pts": 1234,
+    "ppg": "24.7",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/202681.png"
+  },
+  {
+    "id": 1629628,
+    "rank": 55,
+    "name": "RJ Barrett",
+    "team": "TOR",
+    "pts": 1223,
+    "ppg": "21.1",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/1629628.png"
+  },
+  {
+    "id": 1630166,
+    "rank": 56,
+    "name": "Deni Avdija",
+    "team": "POR",
+    "pts": 1219,
+    "ppg": "16.9",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/1630166.png"
+  },
+  {
+    "id": 1631128,
+    "rank": 57,
+    "name": "Christian Braun",
+    "team": "DEN",
+    "pts": 1218,
+    "ppg": "15.4",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/1631128.png"
+  },
+  {
+    "id": 1631094,
+    "rank": 58,
+    "name": "Paolo Banchero",
+    "team": "ORL",
+    "pts": 1191,
+    "ppg": "25.9",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/1631094.png"
+  },
+  {
+    "id": 1642264,
+    "rank": 59,
+    "name": "Stephon Castle",
+    "team": "SAS",
+    "pts": 1190,
+    "ppg": "14.7",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/1642264.png"
+  },
+  {
+    "id": 1630163,
+    "rank": 60,
+    "name": "LaMelo Ball",
+    "team": "CHA",
+    "pts": 1184,
+    "ppg": "25.2",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/1630163.png"
+  },
+  {
+    "id": 203468,
+    "rank": 61,
+    "name": "CJ McCollum",
+    "team": "NOP",
+    "pts": 1183,
+    "ppg": "21.1",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/203468.png"
+  },
+  {
+    "id": 1629012,
+    "rank": 62,
+    "name": "Collin Sexton",
+    "team": "UTA",
+    "pts": 1159,
+    "ppg": "18.4",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/1629012.png"
+  },
+  {
+    "id": 1629630,
+    "rank": 62,
+    "name": "Ja Morant",
+    "team": "MEM",
+    "pts": 1159,
+    "ppg": "23.2",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/1629630.png"
+  },
+  {
+    "id": 1631097,
+    "rank": 64,
+    "name": "Bennedict Mathurin",
+    "team": "IND",
+    "pts": 1156,
+    "ppg": "16.1",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/1631097.png"
+  },
+  {
+    "id": 1630202,
+    "rank": 65,
+    "name": "Payton Pritchard",
+    "team": "BOS",
+    "pts": 1144,
+    "ppg": "14.3",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/1630202.png"
+  },
+  {
+    "id": 1629675,
+    "rank": 66,
+    "name": "Naz Reid",
+    "team": "MIN",
+    "pts": 1138,
+    "ppg": "14.2",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/1629675.png"
+  },
+  {
+    "id": 1641718,
+    "rank": 67,
+    "name": "Keyonte George",
+    "team": "UTA",
+    "pts": 1125,
+    "ppg": "16.8",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/1641718.png"
+  },
+  {
+    "id": 1630530,
+    "rank": 68,
+    "name": "Trey Murphy III",
+    "team": "NOP",
+    "pts": 1124,
+    "ppg": "21.2",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/1630530.png"
+  },
+  {
+    "id": 1626167,
+    "rank": 69,
+    "name": "Myles Turner",
+    "team": "IND",
+    "pts": 1120,
+    "ppg": "15.6",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/1626167.png"
+  },
+  {
+    "id": 1628370,
+    "rank": 70,
+    "name": "Malik Monk",
+    "team": "SAC",
+    "pts": 1117,
+    "ppg": "17.2",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/1628370.png"
+  },
+  {
+    "id": 1641705,
+    "rank": 71,
+    "name": "Victor Wembanyama",
+    "team": "SAS",
+    "pts": 1116,
+    "ppg": "24.3",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/1641705.png"
+  },
+  {
+    "id": 1628386,
+    "rank": 72,
+    "name": "Jarrett Allen",
+    "team": "CLE",
+    "pts": 1103,
+    "ppg": "13.5",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/1628386.png"
+  },
+  {
+    "id": 1629656,
+    "rank": 73,
+    "name": "Quentin Grimes",
+    "team": "PHI",
+    "pts": 1092,
+    "ppg": "14.6",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/1629656.png"
+  },
+  {
+    "id": 1629631,
+    "rank": 74,
+    "name": "De'Andre Hunter",
+    "team": "CLE",
+    "pts": 1088,
+    "ppg": "17.0",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/1629631.png"
+  },
+  {
+    "id": 203952,
+    "rank": 75,
+    "name": "Andrew Wiggins",
+    "team": "MIA",
+    "pts": 1078,
+    "ppg": "18.0",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/203952.png"
+  },
+  {
+    "id": 1630700,
+    "rank": 76,
+    "name": "Dyson Daniels",
+    "team": "ATL",
+    "pts": 1073,
+    "ppg": "14.1",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/1630700.png"
+  },
+  {
+    "id": 1629661,
+    "rank": 77,
+    "name": "Cameron Johnson",
+    "team": "BKN",
+    "pts": 1070,
+    "ppg": "18.8",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/1629661.png"
+  },
+  {
+    "id": 1628415,
+    "rank": 78,
+    "name": "Dillon Brooks",
+    "team": "HOU",
+    "pts": 1053,
+    "ppg": "14.0",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/1628415.png"
+  },
+  {
+    "id": 1628404,
+    "rank": 79,
+    "name": "Josh Hart",
+    "team": "NYK",
+    "pts": 1051,
+    "ppg": "13.6",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/1628404.png"
+  },
+  {
+    "id": 201572,
+    "rank": 80,
+    "name": "Brook Lopez",
+    "team": "MIL",
+    "pts": 1041,
+    "ppg": "13.0",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/201572.png"
+  },
+  {
+    "id": 1630170,
+    "rank": 80,
+    "name": "Devin Vassell",
+    "team": "SAS",
+    "pts": 1041,
+    "ppg": "16.3",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/1630170.png"
+  },
+  {
+    "id": 1630581,
+    "rank": 82,
+    "name": "Josh Giddey",
+    "team": "CHI",
+    "pts": 1022,
+    "ppg": "14.6",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/1630581.png"
+  },
+  {
+    "id": 203084,
+    "rank": 83,
+    "name": "Harrison Barnes",
+    "team": "SAS",
+    "pts": 1011,
+    "ppg": "12.3",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/203084.png"
+  },
+  {
+    "id": 202691,
+    "rank": 84,
+    "name": "Klay Thompson",
+    "team": "DAL",
+    "pts": 1005,
+    "ppg": "14.0",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/202691.png"
+  },
+  {
+    "id": 202699,
+    "rank": 85,
+    "name": "Tobias Harris",
+    "team": "DET",
+    "pts": 1002,
+    "ppg": "13.7",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/202699.png"
+  },
+  {
+    "id": 1630183,
+    "rank": 86,
+    "name": "Jaden McDaniels",
+    "team": "MIN",
+    "pts": 1000,
+    "ppg": "12.2",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/1630183.png"
+  },
+  {
+    "id": 201566,
+    "rank": 87,
+    "name": "Russell Westbrook",
+    "team": "DEN",
+    "pts": 994,
+    "ppg": "13.3",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/201566.png"
+  },
+  {
+    "id": 1630168,
+    "rank": 88,
+    "name": "Onyeka Okongwu",
+    "team": "ATL",
+    "pts": 988,
+    "ppg": "13.4",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/1630168.png"
+  },
+  {
+    "id": 203471,
+    "rank": 89,
+    "name": "Dennis Schröder",
+    "team": "DET",
+    "pts": 980,
+    "ppg": "13.1",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/203471.png"
+  },
+  {
+    "id": 1629640,
+    "rank": 90,
+    "name": "Keldon Johnson",
+    "team": "SAS",
+    "pts": 979,
+    "ppg": "12.7",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/1629640.png"
+  },
+  {
+    "id": 1641708,
+    "rank": 91,
+    "name": "Amen Thompson",
+    "team": "HOU",
+    "pts": 970,
+    "ppg": "14.1",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/1641708.png"
+  },
+  {
+    "id": 202710,
+    "rank": 92,
+    "name": "Jimmy Butler III",
+    "team": "GSW",
+    "pts": 964,
+    "ppg": "17.5",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/202710.png"
+  },
+  {
+    "id": 1628398,
+    "rank": 92,
+    "name": "Kyle Kuzma",
+    "team": "MIL",
+    "pts": 964,
+    "ppg": "14.8",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/1628398.png"
+  },
+  {
+    "id": 1631099,
+    "rank": 94,
+    "name": "Keegan Murray",
+    "team": "SAC",
+    "pts": 942,
+    "ppg": "12.4",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/1631099.png"
+  },
+  {
+    "id": 1642258,
+    "rank": 94,
+    "name": "Zaccharie Risacher",
+    "team": "ATL",
+    "pts": 942,
+    "ppg": "12.6",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/1642258.png"
+  },
+  {
+    "id": 1631105,
+    "rank": 96,
+    "name": "Jalen Duren",
+    "team": "DET",
+    "pts": 918,
+    "ppg": "11.8",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/1631105.png"
+  },
+  {
+    "id": 1630598,
+    "rank": 97,
+    "name": "Aaron Wiggins",
+    "team": "OKC",
+    "pts": 914,
+    "ppg": "12.0",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/1630598.png"
+  },
+  {
+    "id": 1630230,
+    "rank": 97,
+    "name": "Naji Marshall",
+    "team": "DAL",
+    "pts": 914,
+    "ppg": "13.2",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/1630230.png"
+  },
+  {
+    "id": 1627741,
+    "rank": 99,
+    "name": "Buddy Hield",
+    "team": "GSW",
+    "pts": 912,
+    "ppg": "11.1",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/1627741.png"
+  },
+  {
+    "id": 1626162,
+    "rank": 100,
+    "name": "Kelly Oubre Jr.",
+    "team": "PHI",
+    "pts": 906,
+    "ppg": "15.1",
+    "headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/1626162.png"
+  }
+]

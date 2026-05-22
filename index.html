@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>3v3 Slot Machine</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="battle.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
@@ -43,8 +44,31 @@
     </div>
 
     <p class="instructions" id="instructions">Hit SPIN to draft your 3v3 teams</p>
+
+    <!-- Battle Section (hidden until teams locked) -->
+    <div id="battle-section" class="battle-section hidden">
+      <button id="battle-btn" class="btn btn-battle">⚔️ BATTLE</button>
+      <div id="battle-result" class="battle-result hidden">
+        <div class="date-reveal" id="date-reveal"></div>
+        <div class="scoreboard">
+          <div class="score-team score-team-a">
+            <div class="score-label">TEAM A</div>
+            <div class="score-cards" id="score-cards-a"></div>
+            <div class="score-total" id="score-total-a">0</div>
+          </div>
+          <div class="score-vs">VS</div>
+          <div class="score-team score-team-b">
+            <div class="score-label">TEAM B</div>
+            <div class="score-cards" id="score-cards-b"></div>
+            <div class="score-total" id="score-total-b">0</div>
+          </div>
+        </div>
+        <div class="winner-banner hidden" id="winner-banner"></div>
+      </div>
+    </div>
   </div>
 
+  <script src="gamelogs.js"></script>
   <script src="players.js"></script>
   <script src="app.js"></script>
 </body>

@@ -1,0 +1,260 @@
+.battle-section {
+  margin-top: 30px;
+  transition: opacity 0.4s;
+}
+
+.battle-section.hidden {
+  display: none;
+}
+
+.btn-battle {
+  background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding: 16px 50px;
+}
+
+.btn-battle:hover:not(:disabled) {
+  transform: scale(1.05);
+  box-shadow: 0 4px 25px rgba(255, 107, 107, 0.5);
+}
+
+.battle-result {
+  margin-top: 30px;
+}
+
+.battle-result.hidden {
+  display: none;
+}
+
+/* Date reveal */
+.date-reveal {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 3px;
+  color: #ffd200;
+  margin-bottom: 30px;
+  min-height: 40px;
+}
+
+.date-reveal .date-spinning {
+  display: inline-block;
+  animation: dateFlicker 0.08s infinite;
+  color: #888;
+}
+
+@keyframes dateFlicker {
+  0% { opacity: 1; }
+  50% { opacity: 0.3; }
+  100% { opacity: 1; }
+}
+
+.date-reveal .date-final {
+  animation: dateReveal 0.5s ease-out;
+}
+
+@keyframes dateReveal {
+  0% { transform: scale(1.5); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* Scoreboard */
+.scoreboard {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.score-team {
+  flex: 1;
+  max-width: 400px;
+}
+
+.score-label {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 3px;
+  margin-bottom: 12px;
+}
+
+.score-team-a .score-label { color: #4ecdc4; }
+.score-team-b .score-label { color: #ff6b6b; }
+
+.score-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.score-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #14141f;
+  border-radius: 10px;
+  padding: 10px 14px;
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: all 0.4s ease-out;
+}
+
+.score-card.revealed {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.score-team-b .score-card {
+  transform: translateX(20px);
+}
+
+.score-team-b .score-card.revealed {
+  transform: translateX(0);
+}
+
+.score-card img {
+  width: 50px;
+  height: 38px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 6px;
+  background: #1a1a2e;
+}
+
+.score-card-info {
+  flex: 1;
+  text-align: left;
+}
+
+.score-card-name {
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.score-card-matchup {
+  font-size: 0.6rem;
+  color: #666;
+  margin-top: 1px;
+}
+
+.score-card-wl {
+  font-size: 0.55rem;
+  font-weight: 700;
+  margin-left: 2px;
+}
+
+.score-card-wl.win { color: #4ecdc4; }
+.score-card-wl.loss { color: #ff6b6b; }
+
+.score-card-pts {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  min-width: 40px;
+  text-align: right;
+}
+
+.score-card-pts.counting {
+  animation: countPulse 0.15s ease-in-out;
+}
+
+@keyframes countPulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+/* Totals */
+.score-total {
+  font-family: 'Oswald', sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-top: 16px;
+  letter-spacing: 2px;
+}
+
+.score-team-a .score-total { color: #4ecdc4; }
+.score-team-b .score-total { color: #ff6b6b; }
+
+.score-vs {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333;
+  align-self: center;
+  padding-top: 40px;
+}
+
+/* Winner */
+.winner-banner {
+  font-family: 'Oswald', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 4px;
+  padding: 16px 30px;
+  border-radius: 12px;
+  display: inline-block;
+  margin-top: 10px;
+  animation: winnerPop 0.5s ease-out;
+}
+
+.winner-banner.hidden {
+  display: none;
+}
+
+.winner-banner.team-a-wins {
+  background: rgba(78, 205, 196, 0.15);
+  color: #4ecdc4;
+  border: 2px solid #4ecdc4;
+}
+
+.winner-banner.team-b-wins {
+  background: rgba(255, 107, 107, 0.15);
+  color: #ff6b6b;
+  border: 2px solid #ff6b6b;
+}
+
+.winner-banner.tie {
+  background: rgba(255, 210, 0, 0.15);
+  color: #ffd200;
+  border: 2px solid #ffd200;
+}
+
+@keyframes winnerPop {
+  0% { transform: scale(0.5); opacity: 0; }
+  70% { transform: scale(1.1); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* No game found */
+.score-card.no-game {
+  opacity: 0.5;
+}
+
+.score-card.no-game .score-card-pts {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .scoreboard {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .score-vs {
+    padding-top: 0;
+  }
+
+  .score-total {
+    font-size: 2.2rem;
+  }
+
+  .winner-banner {
+    font-size: 1.4rem;
+  }
+}
