@@ -7,21 +7,8 @@
   display: none;
 }
 
-.btn-battle {
-  background: linear-gradient(135deg, #ff6b6b, #ee5a24);
-  color: #fff;
-  font-weight: 700;
-  font-size: 1.3rem;
-  padding: 14px 40px;
-}
-
 .btn-battle.hidden {
   display: none;
-}
-
-.btn-battle:hover:not(:disabled) {
-  transform: scale(1.05);
-  box-shadow: 0 4px 25px rgba(255, 107, 107, 0.5);
 }
 
 .battle-result {

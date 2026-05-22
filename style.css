@@ -4,21 +4,14 @@
   box-sizing: border-box;
 }
 
-html {
+html, body {
   width: 100%;
-  height: auto;
-  overflow-y: scroll;
 }
 
 body {
-  width: 100%;
-  height: auto;
   background: #0a0a0f;
   color: #fff;
   font-family: 'Inter', sans-serif;
-  display: block;
-  overflow-x: hidden;
-  overflow-y: visible;
 }
 
 .container {
@@ -26,7 +19,7 @@ body {
   width: 100%;
   max-width: 1100px;
   margin: 0 auto;
-  padding: 40px 20px 60px 20px;
+  padding: 40px 20px 80px 20px;
 }
 
 header {
@@ -66,13 +59,12 @@ header .vs {
   justify-content: center;
   gap: 20px;
   margin: 40px 0 30px;
-  flex-wrap: wrap;
-  width: 100%;
 }
 
 .team {
   flex: 1;
   min-width: 0;
+}
 
 .team-label {
   font-family: 'Oswald', sans-serif;
@@ -221,6 +213,7 @@ header .vs {
   gap: 16px;
   justify-content: center;
   margin-bottom: 20px;
+  flex-wrap: wrap;
 }
 
 .btn {
@@ -268,10 +261,24 @@ header .vs {
   box-shadow: 0 4px 20px rgba(255, 107, 107, 0.3);
 }
 
+.btn-battle {
+  background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.3rem;
+  padding: 14px 40px;
+}
+
+.btn-battle:hover:not(:disabled) {
+  transform: scale(1.05);
+  box-shadow: 0 4px 25px rgba(255, 107, 107, 0.5);
+}
+
 .instructions {
   font-size: 0.85rem;
   color: #555;
   letter-spacing: 1px;
+  margin-bottom: 20px;
 }
 
 /* Spin animation */
