@@ -125,10 +125,9 @@ async function spin() {
   respinBtn.disabled = false;
   instructions.textContent = 'Click players to respin, or SPIN for all new teams';
 
-  // Also show battle — user can skip respin and go straight to battle
+  // Show battle section
   showBattle();
   battleBtn.textContent = '⚔️ BATTLE';
-  battleResult.classList.add('hidden');
 
   // Enable respin selection
   enableRespinSelection();
@@ -232,8 +231,9 @@ async function respin() {
     el.onclick = null;
   }
 
-  // Show battle button
+  // Keep battle section visible
   showBattle();
+  battleBtn.textContent = '⚔️ BATTLE';
 }
 
 // ─── Battle System ───
@@ -243,14 +243,12 @@ const SEASON_START = new Date('2024-10-22');
 const SEASON_END = new Date('2025-04-13');
 
 function showBattle() {
-  battleBtn.disabled = false;
   battleSection.classList.remove('hidden');
   battleResult.classList.add('hidden');
   document.getElementById('winner-banner').classList.add('hidden');
 }
 
 function hideBattle() {
-  battleBtn.disabled = true;
   battleSection.classList.add('hidden');
 }
 
@@ -347,9 +345,13 @@ function createScoreCard(player, game) {
 }
 
 async function battle() {
+  if (currentPicks.length !== 6) {
+    instructions.textContent = 'Spin first to draft teams!';
+    return;
+  }
+
   battleBtn.disabled = true;
   battleResult.classList.remove('hidden');
-  document.getElementById('winner-banner').classList.add('hidden');
 
   // Clear previous
   document.getElementById('score-cards-a').innerHTML = '';
@@ -421,14 +423,16 @@ async function battle() {
     banner.textContent = '🤝 TIE GAME';
     banner.classList.add('tie');
   }
+  banner.classList.remove('hidden');
 
   // Re-enable for another battle with same teams
   battleBtn.disabled = false;
   battleBtn.textContent = '⚔️ BATTLE AGAIN';
+  instructions.textContent = 'Play again or SPIN for new teams';
 }
 
 // ─── Event listeners ───
-spinBtn.addEventListener('click', () => { hideBattle(); spin(); });
+spinBtn.addEventListener('click', spin);
 respinBtn.addEventListener('click', respin);
 battleBtn.addEventListener('click', battle);
 
