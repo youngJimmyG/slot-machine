@@ -4,18 +4,21 @@
   box-sizing: border-box;
 }
 
-html, body {
+html {
   width: 100%;
-  height: 100%;
+  height: auto;
+  overflow-y: scroll;
 }
 
 body {
+  width: 100%;
+  height: auto;
   background: #0a0a0f;
   color: #fff;
   font-family: 'Inter', sans-serif;
   display: block;
-  overflow-y: scroll;
   overflow-x: hidden;
+  overflow-y: visible;
 }
 
 .container {
@@ -23,7 +26,7 @@ body {
   width: 100%;
   max-width: 1100px;
   margin: 0 auto;
-  padding: 40px 20px;
+  padding: 40px 20px 60px 20px;
 }
 
 header {
