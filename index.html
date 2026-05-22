@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, viewport-fit=cover">
   <title>3v3 Slot Machine</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="battle.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
-  <div class="container">
+<body style="position: static; width: 100%; height: auto; overflow-y: scroll;">
+  <div class="container" style="position: relative;">
     <header>
       <h1>3 <span class="vs">vs</span> 3</h1>
       <p class="subtitle">Top 100 Scorers &bull; 2024-25 Season</p>
@@ -72,4 +72,10 @@
   <script src="players.js"></script>
   <script src="app.js"></script>
 </body>
+<script>
+// Force scroll to be enabled
+document.documentElement.style.overflow = 'auto';
+document.body.style.overflow = 'auto';
+document.body.style.position = 'relative';
+</script>
 </html>

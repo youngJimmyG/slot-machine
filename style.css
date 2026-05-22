@@ -16,8 +16,10 @@ body {
   background: #0a0a0f;
   color: #fff;
   font-family: 'Inter', sans-serif;
-  overflow-y: auto !important;
+  overflow-y: scroll !important;
   overflow-x: hidden !important;
+  -webkit-overflow-scrolling: touch;
+  touch-action: auto;
 }
 
 .container {
